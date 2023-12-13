@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "1.7.0"
+          }
+        }
+      ]
+    ],
+    "name": "PhotoMap",
+    "slug": "AwesomeProject",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/PhotoMap.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "jsEngine": "hermes",
+    "ios": {
+      "supportsTablet": true,
+      "jsEngine": "jsc"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "jsEngine": "jsc",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.taurusvb1.AwesomeProject",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyB9mmw4UfTFLxlxDUHVzAdp7owAEBhiQes"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/PhotoMap.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "757495c5-02c7-4b86-b662-11c55a0348ea"
+      }
+    }
+  }
+}
